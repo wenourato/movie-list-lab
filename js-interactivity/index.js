@@ -28,7 +28,7 @@ movieTitle.addEventListener('click', crossOffMovie)
 
 function deleteMovie (event) {
     event.target.parentNode.remove()
-    message.textContent = `${event.target.parentNode.textContent} deleted!`
+    message.textContent = `${event.target.parentNode.firstChild.textContent} deleted!`
     revealMessage()
 }
 function crossOffMovie (event) {
